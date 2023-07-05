@@ -36,13 +36,48 @@
 }
 
 .premium{
-    padding: 0 200px;
+    padding: 75px 200px;
 }
+
+.premium-intro{
+    padding: 75px 200px;
+    background-color: rgb(29, 117, 222);
+}
+
+.premium-intro h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.premium-intro h2{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+}
+
+.button-intro{
+    margin-top: 30px;
+}
+
+.button-one{
+    border-radius: 500px;
+    background-color: black;
+}
+
+.enlace-intro{
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: 400px;
+    color: white;
+}
+
 .title-premium{
     text-align: center;
-    padding: 75px 0;
+    padding-bottom: 75px;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .premium-section{
