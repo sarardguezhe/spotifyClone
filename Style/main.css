@@ -4,6 +4,8 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*quitar padding de secciones y añadir margin en contenedores*/
 .header{
     background-color: black;
     font-size: 16px;
@@ -14,7 +16,7 @@
 }
 
 .logo{
-    width: 130px;
+    width: 132px;
 }
 
 .lista{
@@ -33,6 +35,11 @@
 
 .lista a:hover{
     color: #1ed760;
+}
+
+.menu-burguer{
+    width: 50px;
+    display: none;
 }
 
 .premium{
@@ -63,7 +70,27 @@
 
 .button-one{
     border-radius: 500px;
+    border: 2px solid black;
+    padding-block: 14px;
+    padding-inline: 32px;
     background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+/*Poner enlaces en html*/
+.button-one:hover, .button-two:hover {
+    transform: scale(1,1);
+}
+
+.button-two{
+    border: 2px solid white;
+    border-radius: 500px;
+    padding-block: 14px;
+    padding-inline: 32px;
+    background-color: rgb(29, 117, 222);
+    color: white;
+    font-weight: 700;
 }
 
 .enlace-intro{
@@ -107,5 +134,197 @@
     font-size: 16px;
     margin-bottom: 0 auto;
     line-height: 1.5;
+}
+
+.premium-price{
+    padding: 75px 200px;
+    background-color: #efefef;
+}
+
+.title-price{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 42px;
+}
+
+.promo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+    background-color: white;
+    padding: 16px;
+}
+
+.promo span{
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 4px 8px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(13, 114, 234);
+}
+
+.promo h3{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.promo-p {
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0px 0px 2px;
+}
+
+.promo .division{
+    align-self: stretch;
+    border-color: rgb(204, 204, 204);
+    margin-top: 20px;
+}
+
+.promo ul{
+    padding-block: 16px;
+    list-style: none;
+    gap: 5px;
+    height: 215px;
+}
+
+.promo li{
+    line-height: 22px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+}
+
+.promo button{
+    border-radius: 500px;
+    padding: 14px 32px;
+    inline-size: 100%;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+.enlace-condiciones{
+    padding-top: 14px;
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+}
+
+.page-links{
+    background-color: black;
+    padding: 80px 0px 50px 0px;
+}
+
+.info-links, .country, .legal-links{
+    margin: 0px 175px;
+}
+
+.info-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    padding: 0px 70px 0px 15px;
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    color: white;
+}
+
+.footer-list dt{
+    margin-block: 23px;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.footer-list dd{
+    margin-bottom: 25px;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.footer-list a:hover, .country a:hover, .legal-links a:hover{
+    color: #1ed760;
+}
+
+.footer-rrss{
+    margin: 0 15px 0 auto;
+}
+
+.footer-rrss ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.country{
+    align-items: center;
+    text-align: right;
+    padding: 12px 15px 12px 0px;
+}
+
+.country a, .legal-links a{
+    color: #919496;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.legal-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    align-items: center;
+}
+
+.legal-links ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 480px){
+     .lista{
+        display: none;
+    }
+    .menu-burguer{
+        display: block;
+    }
+    .premium-section{
+        flex-direction: column;
+    }
 }
 
